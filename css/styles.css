@@ -26,6 +26,7 @@ h4 {
 margin-top: 0;
 }
 
+/*  Верхня головна    */
 .header-menu {
 display: flex;
 margin: 0;
@@ -83,7 +84,6 @@ letter-spacing: 0.03em;
 margin-bottom: 24px;
 font-family: 'Roboto',sans-serif;
 font-style: normal;
-text-decoration: none;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -113,6 +113,16 @@ padding: 20px;
  color: var(--color-hover);
 }    
 
+/*  Container  */
+.container {
+width: 100%;
+max-width: 1158px;
+margin-left: auto;
+margin-right: auto;
+padding-left: 15px;
+padding-right: 15px;
+}
+
 .box-address {
 margin-bottom: 24px;
 font-family: 'Roboto',sans-serif;
@@ -125,28 +135,22 @@ color: var(--color-secondary);
 padding: 20px;
 }
 
-.container {
-width: 100%;
-max-width: 1160px;
-margin: 0 auto;
-padding: 0 16px;
-}
-
 .box-address:hover {
 color: var(--color-hover);
 }
 
-
+/*  2 частина з кнопкою   */
 .hero-section {
 background: var(--color-primary);
 padding-top: 188px;
 padding-bottom: 188px;
+text-align: center;
 }
 
 .hero-title {
-margin: 0;
-padding: 0;
-margin-bottom: 48px;
+max-width: 496px;
+margin: 0 auto 48px;
+text-align: center;
 font-weight: 700;
 font-size: 56px;
 line-height: 1.07;
@@ -173,11 +177,10 @@ font-family: inherit;
 .button:hover {
 background-color: var(--color-hover);
 }
-
+ 
+/*  3 частина багато тексту  */
 .section {
 margin: 0;
-padding: 0;
-padding: 120px 0;
 }
 
 .about-text {
@@ -185,11 +188,8 @@ display: flex;
 align-items: center;
 }
 
-.about-images {
-
-}
-
 .section-subtitle {
+margin-top: 120px;
 margin-bottom: 8px;
 font-style: normal;
 font-weight: 500;
@@ -198,6 +198,7 @@ letter-spacing: 0.02em;
 line-height: 1.2;
 color: var(--color-primary);
 }
+
 .section-text {
 margin-bottom: 120px;
                         /* margin: 0;
@@ -210,8 +211,26 @@ line-height: 1.5;
 color: var(--color-secondary);
 } 
 
+.hero-uk {
+gap: 24px;
+display: flex;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+/* 4 фото і що ми робимо  */
+.picture { 
+flex-basis: calc((100% -72px) / 3);
+align-items: center;
+display: flex;
+gap: 24px;
+margin-bottom: 120px;
+list-style: none;
+}
 
 .slogan-images {
+text-align: center;
 margin-bottom: 72px;
 font-family: 'Roboto',sans-serif;
 font-style: normal;
@@ -221,29 +240,16 @@ line-height: 1.1;
 color: var(--color-primary);
 }
 
-.about-slogan {
-display: flex;
-}
 
-.hero-uk {
-gap: 24px;
-display: flex;
-margin: 0;
-padding: 0;
-list-style: none;
-}
-.picture { 
-align-items: center;
-display: flex;
-gap: 24px;
-margin-bottom: 120px;
-list-style: none;
+.about-images {
+text-align: center;
 }
 
 .images-comp{
 flex-basis: calc ((100% - 48px) / 3);
 }
 
+/*  5 робочі   */
 .team-aside {
 margin-top: 32px;
 margin-bottom: 8px;
@@ -266,8 +272,8 @@ color: var(--color-secondary);
 }
 
 .h-second-aside {
-margin: 0;
-padding: 0;
+text-align: center;
+margin: 0 auto 72px;
 margin-bottom: 72px;
 font-family: 'Roboto',sans-serif;
 font-style: normal;
@@ -277,19 +283,29 @@ line-height: 1.1;
 color: var(--color-primary);
 }
 
+.masters-list{
+display: flex;
+gap: 24px;
+}
+
 .page-aside {
 padding-top: 120px;
 padding-bottom: 120px;
 background-color:var(--color-team);
 }
 
+.master {
+text-align: center;
+}
+
 .box-aside {
+flex-basis: calc((100% - 72px) / 4);
 background: var(--color-inverted);
 list-style-type: none;
 }
     
+/*  6  кінець головної  */
 .page-footer {
-
 padding-top: 100px;
 padding-bottom: 100px;
  background-color: var(--color-primary);
@@ -309,7 +325,44 @@ letter-spacing: 0.03em;
 
 .footer-slogan {
 margin-top: 16px;
+margin-bottom: 0px;
 color: var(--color-page);
+}
+
+.futer-titel{
+max-width: 264px;
+}
+
+/*  Portfolio початок   */
+.site-nav-portfolio {
+padding: 20px;
+margin-bottom: 24px;
+font-family: 'Roboto',sans-serif;
+font-style: normal;
+text-decoration: none;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--color-hover);
+text-decoration: none;
+list-style: none;  
+
+}
+
+.site-nav {
+padding: 20px;
+margin-bottom: 24px;
+font-family: 'Roboto',sans-serif;
+font-style: normal;
+text-decoration: none;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--color-primary);
+text-decoration: none;
+list-style: none;  
 }
 
 .portfolio-main {
@@ -318,7 +371,21 @@ padding-bottom: 120px;
 }
 
 .portfolio-content{
+gap: 24px;
 list-style: none;
+display: flex;  
+justify-content: center;
+}
+
+
+.button-port-all {
+margin-bottom: 72px;
+padding: 12px 24px;
+border-radius: 4px;
+background: var(--color-hover);
+color: var(--color-inverted);
+cursor: pointer;
+border: none;
 }
 
 .button-port{
@@ -333,24 +400,12 @@ border: none;
 font-family: inherit;
 }
 
-.site-nav-portfolio {
-margin-bottom: 24px;
-font-family: 'Roboto',sans-serif;
-font-style: normal;
-text-decoration: none;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: var(--color-hover);
-text-decoration: none;
-list-style: none;    
-}
-
 .button-port:hover {
 background: var(--color-hover);
 color: var(--color-inverted);
 }
+
+/*  2 секція  */
 .box-desc-port {
 margin-bottom: 32px;
 font-family: 'Roboto';
@@ -373,22 +428,16 @@ color: var(--color-primary);
 }
 
 .picture-port {
-list-style: none; 
+display: flex;
+flex-wrap: wrap;
+flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
 .box-aside-port{
+
 box-sizing: border-box;
 border: 1px solid var(--color-page);
 text-decoration: none;
 list-style: none;
 }
  
-.button-port-all {
-margin-bottom: 72px;
-padding: 12px 24px;
-border-radius: 4px;
-background: var(--color-hover);
-color: var(--color-inverted);
-cursor: pointer;
-border: none;
-}
