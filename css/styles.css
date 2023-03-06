@@ -28,6 +28,7 @@ margin-top: 0;
 
 /*  Верхня головна    */
 .header-menu {
+gap: 40px;
 display: flex;
 margin: 0;
 padding: 0;
@@ -92,16 +93,12 @@ display: block;
 }
 
 .menu-studio {
-font-family: 'Roboto',sans-serif;
-font-style: normal;
-text-decoration: none;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--color-hover);
 text-decoration: none;
-list-style: none;
 padding: 24px 0;
 display: block;
 }
@@ -129,7 +126,8 @@ font-weight: 400;
 font-size: 16px;
 text-decoration: none;
 color: var(--color-secondary);
-padding: 20px;
+padding-top: 24px;
+display: block;
 }
 
 .box-address:hover {
@@ -176,8 +174,10 @@ background-color: var(--color-hover);
  
 /*  3 частина багато тексту  */
 .section {
-padding: 120px;
+padding-top: 120px;
+padding-bottom: 120px;
 margin: 0;
+
 }
 
 .about-text {
@@ -195,6 +195,7 @@ color: var(--color-primary);
 }
 
 .section-text {
+margin-bottom: 0px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -209,6 +210,10 @@ display: flex;
 margin: 0;
 padding: 0;
 list-style: none;
+}
+
+.studio {
+display: none;
 }
 
 /* 4 фото і що ми робимо  */
@@ -254,6 +259,12 @@ font-weight: 400;
 font-size: 16px;  
 line-height: 1.5;  
 color: var(--color-secondary);
+margin-bottom: 0px;
+}
+
+.foto-master {
+display: block;
+max-width: 100%;
 }
 
 .h-second-aside {
@@ -283,7 +294,7 @@ background-color:var(--color-team);
 
 .master {
 text-align: center;
-padding: 32px 60px 32px 60px;
+padding: 32px 16px 32px 16px;
 
 }
 
@@ -365,29 +376,32 @@ gap: 24px;
 list-style: none;
 display: flex;  
 justify-content: center;
+padding-left: 0px;
+margin-top: 0px;
 }
 
 
 .button-port-all {
 font-family: inherit;
 padding: 12px 24px;
-border-radius: 4px;
 background: var(--color-hover);
 color: var(--color-inverted);
 cursor: pointer;
 border-radius: 4px;
+outline: none;
+border-radius: 1px var(--color-hover);
 }
 
 .button-port{
-font-family: inherit;
 padding: 12px 24px;
 border: 1px solid var(--color-page);
 border-radius: 4px;
-background: var(--color-team);
+background-color: var(--color-team);
 color: var(--color-button);
 cursor: pointer;
-border: 1px solid #E7E9FC;
+border: 1px solid var(--color-page);
 font-family: inherit;
+border-radius: 1px var(--color-page);
 }
 
 .button-port:hover {
@@ -416,7 +430,8 @@ color: var(--color-primary);
 }
 
 .picture-port {
-margin-right: 24px;
+margin: 0;
+padding: 0;
 display: flex;
 flex-wrap: wrap;
 margin-right: -24px;
@@ -431,10 +446,20 @@ border: 1px solid var(--color-page);
 list-style: none;
 }
 
+.hero-port {
+display: none;
+}
+
 .program {
 text-decoration: none;
+display: block;
 }
  
 .program-pad {
-padding: 32px 54px 32px 16px;
+padding: 32px 16px 32px 16px;
+}
+
+.foto-program {
+display: block;
+max-width: 100%;
 }
